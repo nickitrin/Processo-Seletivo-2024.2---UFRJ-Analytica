@@ -21,7 +21,7 @@ while True:
                     print (f"O menor ângulo é de {abs(360 - menorangulo)}°")
                 else:
                     print (f"O menor ângulo é de {abs(menorangulo)}°")
-            if int(horas[:2]) not in range(24):
+            if int(horas[:2]) not in range(24) or int(horas[3:]) not in range(60):
                 print ("Input Inválido")
                 
     except Exception:
