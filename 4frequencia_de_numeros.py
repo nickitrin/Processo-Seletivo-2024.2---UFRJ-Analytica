@@ -1,13 +1,23 @@
 dic={}
 while True:
-    numero = input("")
+    numero = input("")    
     if numero == "f":
-        print("Fim...")
         break
+        
+    try:
+        if isinstance(int(numero), int):
+            for i in dic:
+                if numero == i :
+                    dic[i]+=1
+            if numero not in dic:
+                dic[numero]= 1
+                
+    except Exception:
+        pass
+
+for i in dic:
+    if dic[i]!=1:
+        print("O número", i, "apareceu", dic[i], "vezes")
     else:
-        for i in dic:
-            if numero == i :
-                dic[i]+=1
-        if numero not in dic:
-            dic[numero]= 1
-    print(dic.items())
+        print("O número", i, "apareceu", dic[i], "vez")
+print("Fim...")
