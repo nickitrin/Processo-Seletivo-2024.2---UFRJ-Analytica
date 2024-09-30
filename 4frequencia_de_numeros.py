@@ -10,4 +10,4 @@ while True:
                 dic[i]+=1
         if numero not in dic:
             dic[numero]= 1
-    print(dic.keys())
+    print(dic.items())
