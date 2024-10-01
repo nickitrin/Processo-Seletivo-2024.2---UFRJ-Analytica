@@ -1,5 +1,4 @@
 import pandas as pd
-
 import numpy as np
 
 # A partir do valor de media filtre o dataframe dos dados de 1991 para apenas os que possuem IDH maior que a media.
