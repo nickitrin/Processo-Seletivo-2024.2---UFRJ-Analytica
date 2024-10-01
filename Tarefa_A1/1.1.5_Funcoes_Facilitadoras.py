@@ -22,3 +22,21 @@ print(np.mean(array1))
 print (np.std(array1))
 print (np.max(array1))
 print (np.min(array1))
+
+
+import numpy as np
+
+array1 = np.array([5.5, 3.8, 9, 7.5, 10.0, 9.9, 8.5])
+
+# Gere um array de 100 numeros aleatorios entre 0 e 10 (inclusive) e imprima na tela a media, desvio padrao, o maior valor e o menor valor.
+
+from numpy import random
+
+array_de_100 = random.rand(100)*10
+
+print(array_de_100)
+
+print (np.mean(array_de_100))
+print (np.std(array_de_100))
+print (np.max(array_de_100))
+print (np.min(array_de_100))
