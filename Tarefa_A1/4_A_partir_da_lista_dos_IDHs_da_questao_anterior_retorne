@@ -35,3 +35,20 @@ print(newdf)
 
 print ("\n Tabela dos 5 primeiros de acordo com o IDH \n")
 print(newdf.head(5))
+
+# Analise os dados de IDH. Use as funcoes de .min(), .max(), .idxmin() e .idxmax() para saber qual o estado de maior e menor IDH no DataFrame do ano de 1991.
+
+df_filtroidhm_max= df[df['idhm'] == np.max(df_idhm)] 
+df_filtroidhm_min= df[df['idhm'] == np.min(df_idhm)]
+df_filtroidhm_idxmax= df.idxmax()
+df_filtroidhm_idxmin= df.idxmin()
+
+print ("\n Estado de maior IDH no DataFrame do ano de 1991 foi o Distrito Federal de acordo com:  \n")
+print(df_filtroidhm_max.loc[:, 'sigla_uf'])
+
+print(df_filtroidhm_idxmax)
+
+print ("\n Estado de menor IDH no DataFrame do ano de 1991 foi o Maranhao de acordo com: \n")
+print(df_filtroidhm_min.loc[:, 'sigla_uf'])
+
+print(df_filtroidhm_idxmin)
