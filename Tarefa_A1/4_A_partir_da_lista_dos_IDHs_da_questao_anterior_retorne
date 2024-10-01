@@ -4,7 +4,7 @@ import numpy as np
 
 # A partir do valor de media filtre o dataframe dos dados de 1991 para apenas os que possuem IDH maior que a media.
 
-print ("\n Dataframe dos dados de 1991 que possuem IDH maior que a média \n")
+print ("\n Dataframe dos dados de 1991 que possuem IDH maior que a media \n")
 
 df = pd.read_csv("arquivo.csv")
 
