@@ -1,0 +1,17 @@
+import pandas as pd
+
+import numpy as np
+
+
+df = pd.read_csv("arquivo.csv")
+
+filtro = df["ano"] == 1991
+df_filtrado = df[filtro]
+
+df_idhm = df_filtrado.loc[:, 'idhm']
+
+filtroidhmmaior =  df['idhm'] > np.mean(df_idhm) 
+
+df_filtrado = df[ filtro & filtroidhmmaior ]
+
+print (df_filtrado)
