@@ -26,6 +26,8 @@ grafico_uf_filtrado00 = df_filtrado00.loc[:,'idhm']
 plt.hist(grafico_uf_filtrado00, 5, rwidth=0.9)
 plt.show()
 
+print("\n De acordo com os gráficos a desigualdade no Brasil diminuiu")
+
 
 #grafico_freq_idh_2010
 
