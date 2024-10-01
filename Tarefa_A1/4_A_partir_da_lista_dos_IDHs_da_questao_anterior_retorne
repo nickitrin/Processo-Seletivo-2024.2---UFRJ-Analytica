@@ -4,6 +4,8 @@ import numpy as np
 
 # A partir do valor de media filtre o dataframe dos dados de 1991 para apenas os que possuem IDH maior que a media.
 
+print ("\n Dataframe dos dados de 1991 que possuem IDH maior que a média \n")
+
 df = pd.read_csv("arquivo.csv")
 
 filtro = df["ano"] == 1991
@@ -21,3 +23,15 @@ print (df_filtrado)
 
 print ("\n Estados que estao acima da media \n")
 print(df_filtrado.loc[:,'sigla_uf'])
+
+# Ordene os dados do DataFrame de 1991 de acordo com o IDH
+
+print ("\n Dados do DataFrame de 1991 de acordo com o IDH \n")
+newdf = df_filtrado.sort_values(by='idhm')
+
+print(newdf)
+
+# Mostre a tabela dos 5 primeiros 
+
+print ("\n Tabela dos 5 primeiros de acordo com o IDH \n")
+print(newdf.head(5))
