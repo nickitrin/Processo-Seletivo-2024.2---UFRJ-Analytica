@@ -2,6 +2,7 @@ import pandas as pd
 
 import numpy as np
 
+# A partir do valor de media filtre o dataframe dos dados de 1991 para apenas os que possuem IDH maior que a media.
 
 df = pd.read_csv("arquivo.csv")
 
@@ -15,3 +16,8 @@ filtroidhmmaior =  df['idhm'] > np.mean(df_idhm)
 df_filtrado = df[ filtro & filtroidhmmaior ]
 
 print (df_filtrado)
+
+#Retorne os estados referentes a essas linhas resultantes.
+
+print ("\n Estados que estao acima da media \n")
+print(df_filtrado.loc[:,'sigla_uf'])
