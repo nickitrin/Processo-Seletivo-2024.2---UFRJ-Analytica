@@ -14,4 +14,4 @@ df_idhm = pd.to_numeric(df_idhm, errors='coerce')
 df_idhm = df_idhm.dropna()
 
 print (df_idhm)
-print (np.mean(df_idhm)*1000)
+print (np.mean(df_idhm))
